@@ -32,8 +32,8 @@ jobs:
           cmd: install 
       - name: Build React App
         run: yarn build
-      - name: check jason file
-        run: npm init
+      - name: local
+        uses: ./  
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
